@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 250px 500px;
+        grid-column-gap: 10px;
+        width: 800px;
+        margin: 200px 250px;
+       
+    }
+    .grid-item{
+        display: grid;
+        grid-template-rows: 30px 30px 30px 30px;
+        width: 200px;
+        border-style: 10px solid red;
+        background-color: gray;
+
+    }
+    .grid-item a{
+        padding: 5px 5px;
+    }
+    .grid-item a:hover{
+        background-color: black;
+        color: white;
+    }
+    .grid-item-long{
+        display: grid;
+        grid-template-rows: 40px 40px;
+        grid-row-gap: 30px;
+    }
+    .grid-nav-long a:hover{
+        background-color: gray;
+        color: lightgray;
+    }
+    .grid-nav a:hover{
+        background-color: black;
+        color: white;
+    }
+    .grid-nav{
+        background-color: gray;
+        color: white; 
+        display: grid;
+        grid-template-columns: 100px 100px 100px auto 100px;
+
+    }
+    .grid-nav a{
+        border-style: 50px dashed red;
+        text-align: center;
+        padding: 5px 5px;
+    }
+    .grid-nav-long{
+        display: grid;
+        grid-template-columns: 100px 100px 100px auto 100px; 
+        background-color: lightgray;
+    }
+    .grid-nav-long a{
+        text-align: center;
+        padding: 5px 5px;
+    }
+    .grid-item a:first-of-type{
+        background-color: green;
+    }
+    .grid-nav a:first-of-type{
+        background-color: green;
+    }
+    .grid-nav-long a:nth-child(3){
+        background-color: darkcyan;
+    }
+    #no-hover1{
+        background-color: gray;
+    }
+    #no-hover2{
+        background-color: lightgray;
+    }
+</style>
+<body>
+    <div class="grid-container">
+    <section class="grid-item">
+        <a>Home</a>
+        <a>News</a>
+        <a>Contact</a>
+        <a>About</a>
+    </section>
+    <section class="grid-item-long">
+        <div class="grid-nav">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contact</a>
+            <a id="no-hover1"></a>
+            <a>About</a>
+        </div>
+        <div class="grid-nav-long">
+                <a>Home</a>
+                <a>News</a>
+                <a>Contact</a>
+                <a id="no-hover2"></a>
+                <a>About</a>
+        </div>
+    </section>
+</div>
+</body>
+</html>
