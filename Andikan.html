@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- <meta http-equiv="refresh" content="5"> -->
+   <!-- <link rel="stylesheet" href="index.css"> -->
+   <title>Navbar Classwork</title>
+</head>
+
+<style>
+.grid-container{
+   display: grid;
+   grid-template-columns: 257px auto;
+   grid-column-gap: 20px;
+   padding: 100px 250px;
+   line-height: 1.5;
+   border: none;
+}
+.grid-container > :first-of-type{     /*first-grid-item */
+   display: grid;
+   grid-template-columns: auto;
+   background-color: #f1f1f1;
+   font-size: 16px;
+   /* color: #4caf4f; */
+}
+.grid-container > :last-of-type{
+   display: grid;
+   grid-template-rows: auto;
+   /* align-content: center; */
+}
+.item{
+   display: grid;
+   grid-template-columns: 60px 60px 70px auto 60px;
+   /* color: #4caf4f; */
+} 
+.grid-container > :last-of-type > :first-of-type > a{
+      background-color: #333333;
+      color: #fff;
+      padding: 10px 8px;
+}
+.grid-container > :last-of-type > :first-of-type > a:hover{
+   background-color: #000000;
+}
+#active{
+   background-color: #4caf4f;
+}
+.grid-item > a {
+   padding: 10px 8px;
+}
+.grid-item > a:hover{
+   background-color: #555;
+   color: #fff;
+}
+.grid-container > .grid-item > a:nth-child(1), .grid-item > :first-of-type > a:nth-child(1) {
+   background-color: #4caf4f;
+   color: #fff;
+}
+.item{
+   align-self: center;
+}
+
+#act{
+   background-color: #008bba;
+}
+
+#item{
+   background-color: #f3f3f3;
+   border: 0.1px solid #e7e7e7;
+}
+#item > a{
+   padding: 10px 9px;
+}
+#item > a:hover{
+   background-color: #ddd;
+}
+a#act:hover{
+   background-color: #008bba;
+}</style>
+
+<body>
+   <div class="grid-container">
+      <div class="grid-item">
+         <a id="active">Home</a>
+         <a>News</a>
+         <a>Contact</a>
+         <a>About</a>
+      </div>
+      <div class="grid-item">
+         <div class="item">
+            <a id="active">Home</a>
+            <a>News</a>
+            <a>Contact</a>
+            <a></a>
+            <a>About</a>
+         </div>
+         <div class="item" id="item">
+            <a>Home</a>
+            <a>News</a>
+            <a id="act">Contact</a>
+            <a></a>
+            <a>About</a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
