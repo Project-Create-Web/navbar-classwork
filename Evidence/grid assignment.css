@@ -1,0 +1,83 @@
+.grid-box{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.second-box{
+    display: grid;
+    grid-template-rows: 45px 45px;
+    grid-row-gap: 20px;
+}
+.grid-nav{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(146, 143, 143);
+}
+.grid-nav a:hover:nth-of-type(2){
+    background-color: rgb(63, 62, 62);
+}
+.grid-nav a:hover:nth-of-type(3){
+    background-color: rgb(63, 62, 62);
+}
+.grid-nav a:hover:nth-of-type(4){
+    background-color: rgb(63, 62, 62);
+}
+.grid-nav a{
+    display: grid;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-align: left;
+}
+.grid-nav-box1{
+    display: grid;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    background-color: rgb(22, 22, 22);
+}
+.grid-nav-box1 a{
+    display: grid;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+.grid-nav a:first-of-type{
+    background-color: green;
+    color: white;
+}
+.grid-nav-box1 a:first-of-type{
+    background-color: green;
+    color: white;
+}
+.grid-nav-box1 a:hover:nth-of-type(2){
+    background-color: black;
+}
+.grid-nav-box1 a:hover:nth-of-type(3){
+    background-color: black;
+}
+.grid-nav-box1 a:hover:nth-of-type(5){
+    background-color: black;
+}
+.grid-nav-box2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    background-color: lightgray;
+}
+.grid-nav-box2 a:nth-of-type(3){
+    background-color: rgb(106, 197, 240);
+}
+.grid-nav-box2 a:hover:nth-of-type(1){
+    background-color: rgb(185, 184, 184);
+}
+.grid-nav-box2 a:hover:nth-of-type(2){
+    background-color: rgb(185, 184, 184);
+}
+.grid-nav-box2 a:hover:nth-of-type(5){
+    background-color: rgb(185, 184, 184);
+}
+.grid-nav-box2 a{
+    display: grid;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}        
