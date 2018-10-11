@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nav bar</title>
+</head>
+<style>
+	.grid{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 20px;
+
+	}
+	.first{
+		display: grid;
+		box-shadow: 2px 2px 11px grey;
+		grid-template-columns: 100px 100px 100px auto 100px;
+		background-color:grey;
+		height: 50px;
+		text-align: center;
+
+	}
+	a{
+		text-decoration: none;
+		padding-top: 16px;
+	}
+	a:hover{
+		background-color: black;
+	}
+	#a{	
+	
+		background-color:green ;
+	}
+	a.active{
+		background-color:green ;
+	}
+	.second{
+		box-shadow: 2px 2px 11px grey;
+		background-color: lightgrey;
+	}
+	.third{
+		display: block;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	#hom{
+		background-color: green;
+	}
+
+</style>
+<body>
+	<div class="grid">
+		<div class="first">
+			<a href="#" id="a">Home</a>
+			<a href="#">News</a>
+			<a href="#">Contact</a>
+			<p></p>
+			<a href="#">About</a>
+		</div>
+		<div class="second">
+			<a href="#" class="third" id="hom">Home</a>
+			<a href="#" class="third">News</a>
+			<a href="#" class="third">Contact</a>
+			
+			<a href="#" class="third">About</a>
+		</div>
+	</div>
+</body>
+</html>
