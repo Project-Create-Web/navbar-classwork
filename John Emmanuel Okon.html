@@ -9,59 +9,99 @@
 		display: grid;
 		grid-template-columns: auto auto;
 		grid-column-gap: 20px;
+		grid-template-rows: auto auto;
+
 
 	}
 	.first{
 		display: grid;
 		box-shadow: 2px 2px 11px grey;
 		grid-template-columns: 100px 100px 100px auto 100px;
-		background-color:grey;
+		background-color:#333;
 		height: 50px;
 		text-align: center;
+
 
 	}
 	a{
 		text-decoration: none;
 		padding-top: 16px;
+		color: #e6e6e6;
 	}
 	a:hover{
-		background-color: black;
+		background-color: #000;
 	}
 	#a{	
 	
-		background-color:green ;
+		background-color:#4CAF50 ;
 	}
 	a.active{
 		background-color:green ;
 	}
 	.second{
 		box-shadow: 2px 2px 11px grey;
-		background-color: lightgrey;
+		background-color:#f1f1f1;
 	}
 	.third{
 		display: block;
 		text-align: center;
 		padding-bottom: 10px;
+		color: #000;
 	}
 	#hom{
-		background-color: green;
+		background-color: #4CAF50;
+		color: white;
 	}
-
+	.third:hover{
+		background-color: #555;
+		color: white;
+	}
+	.grid1{
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-row-gap: 10px;
+	}
+	
+	.down > a {
+		background-color: #f1f1f1;
+		color: #6f6f6f;
+	}
+	.down > a:hover{
+		background-color: #ddd;
+		color: #6f6f6f;
+	}
+	.down{
+		background-color: #f1f1f1;
+	}
+	#con{
+		background-color:#008cba; 
+	}
+	
 </style>
 <body>
 	<div class="grid">
-		<div class="first">
-			<a href="#" id="a">Home</a>
-			<a href="#">News</a>
-			<a href="#">Contact</a>
-			<p></p>
-			<a href="#">About</a>
+		<div class="grid1">
+			<div class="first">
+				<a href="#" id="a">Home</a>
+				<a href="#">News</a>
+				<a href="#">Contact</a>
+				<p></p>
+				<a href="#">About</a>
+			</div>
+			<div class="first down">
+				<a href="#" >Home</a>
+				<a href="#">News</a>
+				<a href="#" id="con">Contact</a>
+				<p></p>
+				<a href="#">About</a>
+			</div>	
 		</div>
+		
+
 		<div class="second">
 			<a href="#" class="third" id="hom">Home</a>
 			<a href="#" class="third">News</a>
 			<a href="#" class="third">Contact</a>
-			
 			<a href="#" class="third">About</a>
 		</div>
 	</div>
