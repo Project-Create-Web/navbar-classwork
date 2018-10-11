@@ -1,0 +1,88 @@
+.container{
+    display:grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 2em;
+
+}
+
+.part2{
+    display:grid;
+    grid-template-rows: 80px 80px;
+    grid-row-gap: 2em;
+    
+}
+.jss1{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background-color: #f3f3f3;
+    color: black;
+    
+    
+}
+.jss1 a{
+    padding: 20px ;
+    cursor: pointer;
+}
+.jss1 a:hover{
+    background-color:#444;
+    color: white;
+}
+.jss1 a:nth-child(1){
+    background-color: green;
+    cursor: pointer; 
+}
+.jss2a{
+    display: grid;
+    grid-template-columns: 110px 110px 110px auto 110px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+
+
+}
+.jss2a a{
+    padding: 30px;
+    cursor: pointer;
+
+}
+.jss2a a:hover{
+    background-color: black;
+}
+
+
+.jss2a a:nth-child(1){
+    background-color: green;
+    color: white;
+}
+.jss2a a:nth-child(4){
+    background-color: #444;
+}
+
+
+.jss2b{
+    display: grid;
+    grid-template-columns: 110px 110px 110px auto 110px;
+    text-align: center;
+    background-color:#f3f3f3;
+    color: grey;
+    grid-row-gap: 2em;
+
+}
+.jss2b a{
+    padding: 30px;
+    cursor:pointer;
+
+}
+.jss2b a:hover{
+    background-color: #ddd;
+}
+.jss2b a:nth-child(3){
+    background-color: rgb(74, 155, 202);
+    color: white;
+}
+.jss2b a:nth-child(4){
+    background-color: #f3f3f3;
+}
+
+  
+ 
