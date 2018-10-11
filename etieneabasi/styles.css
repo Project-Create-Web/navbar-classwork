@@ -11,10 +11,10 @@ body
 
 }
 
-.container
+/* .container
 {
     width: 100px; 
-}
+} */
 .grid-navright1{
 display: grid;
 grid-template-columns: 300px;
@@ -73,13 +73,14 @@ color: #f4fff4;
 { 
     
     
-   background-color:  #aaa;
+   background-color:  black;
    cursor: pointer;
     
 }
 .grid-navright2 a:nth-of-type(4)
 {
-background-color: black;
+background-color: rgb(32, 27, 27);
+cursor: auto;
 }
 .grid-navright2 a:first-of-type
 { 
@@ -122,5 +123,6 @@ color: #f4fff4;
 .grid-navright3 a:nth-of-type(4)
 {
     background-color:#f3f3f3;
+    cursor: auto;
 }
 
