@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 400px auto;
+        grid-column-gap: 20px;
+        font-family:  Tahoma;
+        /* cursor: pointer; */
+    }
+    .grid-items{
+        /* border: 1px solid black; */
+        
+        color: black;
+    }
+.grid-nav{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    background-color:rgb(241, 240, 240);
+    padding: 10px 10px;
+}
+.grid-nav a{
+    /* border: 1px solid black; */
+    padding: 10px 0;
+    /* text-align:center; */
+    color:black;
+    text-align: left;
+    cursor: pointer;
+    
+}
+.grid-nav a:hover{
+    background-color: #444;
+    color: white;
+}
+.grid-nav a:first-of-type{
+    background-color: rgb(80, 168, 80);
+    color:black;
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    background-color: #444;
+    color: white;
+    text-align: center;  
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    background-color: rgb(241, 240, 240);
+    font-family:  Tahoma;
+    color: #444;
+    text-align: center;   
+}
+.grid a{
+    padding-top: 20px; 
+}
+.grid2 a{
+    padding-top: 20px; 
+}
+.type1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.horizontal-nav{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+    
+}
+.grid a:first-of-type{
+    background-color: rgb(80, 168, 80);
+    color:black;
+    cursor: pointer;
+}
+.type:hover{
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+.grid2 a:nth-child(3){
+    background-color: rgb(58, 142, 199);
+    cursor: pointer;
+}
+
+
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-items">
+                <nav class="grid-nav">
+                    <a>Home</a>
+                    <a>News</a>
+                    <a>Contact</a>
+                    <a>About</a>
+                </nav>
+        </div>
+        
+                <div class="horizontal-nav">
+                <nav class="grid">
+                    <a>Home</a>
+                    <a class="type1">News</a>
+                    <a class="type1">Contact</a>
+                    <a></a>
+                    <a class="type1">About</a>
+                </nav>
+                <nav class="grid2">
+                        <a class="type">Home</a>
+                        <a class="type">News</a>
+                        <a>Contact</a>
+                        <a></a>
+                        <a class="type">About</a>
+                    </nav>
+                </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <style>
+    .grid-container{
+        display: grid;
+        grid-template-columns:200px 500px;
+        grid-column-gap: 30px;
+        margin: 150px 100px
+    }
+
+    .first-grid{
+        display: grid;
+        grid-template-rows:40px 40px 40px 40px;
+        max-width: 200px;
+        background-color: white;
+    }
+    .second-grid{
+        display:grid;
+        grid-row-gap:20px;
+        grid-template-rows:40px 40px;   
+    }
+
+    .first-grid a:nth-child(1){
+        background-color: green;
+    }
+
+   .second-grid-long a:hover{
+    background-color: black;
+    color: rgb(19, 18, 18)
+}
+    
+    .second-grid-long{
+        display: grid;
+        grid-template-columns: 100px 100px 100px auto 100px;
+        background-color:rgb(36, 34, 34);
+        -webkit-text-fill-color: white;
+        text-align:center; 
+                      
+    }
+    .second-grid-long a:first-of-type{
+        background-color: green;
+    }
+   
+    .first-grid a:hover{
+        background-color: grey;
+        color:white
+    }
+.second-grid-long a{
+    padding: 10px 10px;
+    text-align: center;
+     }
+.second-grid-short a:hover{
+        background-color: rgb(178, 184, 206);
+        color:rgb(214, 228, 225)
+     }
+
+   #no-hover1{
+   background-color: rgb(36, 34, 34);
+   } 
+
+#no-hover2{
+   background-color: rgb(214, 228, 225)
+   } 
+  
+   .second-grid-short{
+    display: grid;
+        grid-template-columns: 100px 100px 100px auto 100px;
+        background-color:rgb(214, 228, 225);
+        text-align:center;  
+   }
+
+   .second-grid-short a:nth-child(3){
+        background-color: rgb(40, 81, 170)
+    }
+    .second-grid-short a{
+    padding: 10px 10px;
+    text-align: center;
+    </style>
+
+
+</head>
+<body>
+    <section class="grid-container">
+        <div class="first-grid">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contacts</a>
+            <a>About</a>
+        </div>
+     
+        <section class="second-grid">
+            <div class="second-grid-long">
+                <a>Home</a>
+                <a>News</a>
+                <a>Contact</a>
+                <a id="no-hover1"></a>
+                <a>About</a>
+            </div>
+             <nav class="second-grid-short">
+                 <a>Home</a>
+                 <a>News</a>
+                 <a>Contact</a>
+                 <a id="no-hover2"></a>
+                 <a>About</a>
+             </nav>
+        </section>
+    </section>
+        
+</body>
+</html>
