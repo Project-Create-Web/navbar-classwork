@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation bar</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-columns: 200px auto;
+    }
+    .grid-nav {
+        display: grid;
+        grid-template-rows: 40px 40px 40px 40px;
+        grid-template-columns: 200px;
+        background-color: lightgray;
+        width: 200px;
+        color: black;
+    }
+    .grid-nav1{
+        display: grid;
+        grid-template-columns: 100px 100px 100px auto 100px;
+        background-color: #444;
+        color: white;
+        text-align: center;
+    }
+    .grid-nav2{
+        display: grid;
+        grid-template-columns: 100px 100px 100px auto 100px;
+        background-color:lightgray;
+        color: black;
+        text-align: center;
+    }
+    .grid-item{
+        display: grid;
+        grid-template-rows: 45px 45px;
+        grid-row-gap: 25px;
+    }
+    .grid-nav a{
+        padding: 10px 10px;
+        text-align: left;
+        color:black;
+        font-family: tahoma;
+    }
+    .grid-nav1 a{
+        padding: 10px 10px;
+        text-align: center;
+        color:white;
+        font-family: tahoma;
+    }
+    .grid-nav2 a{
+        padding: 10px 10px;
+        text-align: center;
+        color: black;
+        font-family: tahoma;
+    }
+    .grid-nav1 a:nth-child(5){
+        text-align: center;
+    }
+    .grid-nav2 a:nth-child(5){
+        text-align: center;
+    }
+    .grid-nav a:first-of-type {
+        background-color:green;
+        color: white;
+    }
+    .grid-nav1 a:first-of-type {
+        background-color:green;
+        color: white;
+    }
+    .grid-nav2 a:nth-child(3){
+        background-color:darkcyan;
+        color: white;
+    }
+    .grid-nav a:hover {
+        background-color: #444;
+        color: lightgray;
+    }
+    .grid-nav1 a:hover {
+        background-color: black;
+        color: white;
+    }
+    .grid-nav2 a:hover {
+        background-color: gray;
+        color: lightgray;
+    }
+    #no-hover1:hover{
+        background-color: #444;
+    }
+    #no-hover2:hover{
+        background-color: lightgray;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <nav class="grid-nav">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contact</a>
+            <a>About</a>
+        </nav>
+    <section class="grid-item">
+        <nav class="grid-nav1">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contact</a>
+            <a id="no-hover1"></a>
+            <a>About</a>
+        </nav>
+        <nav class="grid-nav2">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contact</a>
+            <a id="no-hover2"></a>
+            <a>About</a>
+        </nav> 
+    </section>
+</div>
+</body>
+</html>
