@@ -4,7 +4,6 @@ body
     margin: 0px;
 }
 
-
 .container
 {
     width: 100px; 
@@ -19,7 +18,7 @@ grid-template-rows: auto auto auto auto;
 {
    
     padding: 13px 5px;
-    background-color: #f3f3f3;
+    background-color: #aaa;
     padding-left:10px ;
 
 }
@@ -27,16 +26,15 @@ grid-template-rows: auto auto auto auto;
 .grid-navright1 a:hover
 {
 cursor: pointer;
-background-color: black;
-color: #f4fff4;
+background-color: rgb(226, 223, 223);
+color: black;
 }
 .grid-navright1 a:first-of-type
 {
- background-color: #4caf50;
- color: #f4fff4;
+ background-color: green;
+ color: white;
 }
-.secondgrid
-{
+.secondgrid{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -51,8 +49,9 @@ color: #f4fff4;
     display: grid;
     grid-template-columns: 100px 100px 100px auto 100px ;
    text-align: center;
-   background-color: rgb(32, 27, 27);
-   color: #f4fff4;
+   background-color: black;
+   color: white;
+   
 } 
 .grid-navright2 a
 { 
@@ -83,14 +82,13 @@ background-color: green;
     display: grid;
     grid-template-columns: 100px 100px 100px auto 100px ;
    text-align: center;
-   background-color:#f3f3f3;
-   color: #333533;
+   background-color:#aaa;
+   color: black;
 }
 .grid-navright3 a
 { 
     
     padding: 15px 9px;
-    
     
 }
 .grid-navright3 a:hover
@@ -98,16 +96,11 @@ background-color: green;
     
     padding: 15px 9px;
    background-color:  #aaa;
-   cursor: pointer;
     
 }
 .grid-navright3 a:nth-of-type(3)
 {
-background-color: #008cba;
-color: #f4fff4;
-}
-.grid-navright3 a:nth-of-type(4)
-{
-    background-color:#f3f3f3;
+background-color: blue;
+color: white;
 }
 

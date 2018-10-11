@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav Bar Using Grid</title>
+    <style>
+        .grid-container {
+            display:grid;
+            grid-template-columns:200px auto;
+            grid-column-gap: 50px;
+        }
+
+        .grid-item {
+            display:grid;
+            grid-template-rows:45px 45px;
+            grid-row-gap:25px;
+        }
+
+        .grid-nav{
+            display:grid;
+            grid-template-rows:50px 50px 50px 50px;
+            grid-template-columns:200px;
+            background-color:whitesmoke;
+            color:black;
+            width:200px;
+        }
+        .grid-nav a{
+            border-right:none;
+            padding: 10px 10px;
+            text-align: left;
+            color:black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .grid-nav a:hover{
+            background-color:rgb(102, 95, 95);
+            color:whitesmoke;
+        }
+        .grid-nav a:first-of-type{
+            background-color: green;
+        }
+        .grid-nav a:nth-child(1){
+            color:whitesmoke;
+        }
+
+        .grid-nav1{
+            display:grid;
+            grid-template-columns:100px 100px 100px auto 100px;
+            width:auto;
+            background-color:#444;
+            color:whitesmoke;
+            text-align: center;
+        }
+        .grid-nav1 a{
+            border-right:none;
+            padding:10px 10px;
+            text-align:center;
+            color:whitesmoke;
+            font-family: tahoma;
+        }
+        .grid-nav1 a:hover{
+            background-color:black;
+            color:whitesmoke;
+        }
+        .grid-nav1 a:first-of-type{
+            background-color:green;
+        }
+        .grid-nav1 a:nth-child(4){
+            background-color:#444;
+        }
+        
+        .grid-nav2{
+            display:grid;
+            grid-template-columns:100px 100px 100px auto 100px;
+            width: auto;
+            background-color:lightgray;
+            color: whitesmoke;
+            text-align: center;
+            box-shadow: gray;
+        }
+        .grid-nav2 a{
+            border-right:none;
+            padding: 10px 10px;
+            text-align:center;
+            color:black;
+            font-family:tahoma;
+        }
+        .grid-nav2 a:hover{
+            background-color:lightslategray;
+            color:black;
+        }
+        .grid-nav2 a:nth-child(3){
+            background-color:rgb(140, 133, 184);
+        }
+        .grid-nav2 a:nth-child(4){
+            background-color:lightgray;
+        }
+        .grid-nav2 a:nth-child(3){
+            color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <main class="grid-container">
+        <nav class="grid-nav">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contact</a>
+            <a>About</a>
+        </nav>
+        <section class="grid-item">
+            <nav class="grid-nav1">
+                <a class="active">Home</a>
+                <a>News</a>
+                <a>Contact</a>
+                <a></a>
+                <a>About</a>
+            </nav>
+            <nav class="grid-nav2">
+                <a class="active">Home</a>
+                <a>News</a>
+                <a>Contact</a>
+                <a></a>
+                <a>About</a>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>

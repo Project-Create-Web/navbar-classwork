@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 30px;
+}
+.grid-item2 {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-rows: 40px 40px;
+}
+.grid-item1 {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    background-color: lightgray;
+}
+.grid-item1 a:nth-child(1){
+    color: white;
+    background-color: green;
+}
+.first-row {
+    display: grid;
+    background-color: #444;
+    color: white;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    text-align: center;
+}
+.second-row{
+    display: grid;
+    background-color: lightgray;
+    color: black;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    text-align: center;
+}
+.second-row a{
+    padding: 10px 10px;
+}
+.second-row a{
+    padding: 10px 10px;
+}
+.grid-item1 a{
+    padding: 10px 10px;
+}
+.first-row a:nth-child(1){
+    color: white;
+    background-color: green;
+}
+.second-row a:nth-child(3){
+    color: white;
+    background-color:dodgerblue ;
+}
+.grid-item1:hover{
+    background-color: black; 
+    color: white;
+}
+.second-row :hover{
+    background-color: black; 
+    color: white;
+}
+.second-row :hover{
+    background-color: black; 
+    color: white;
+}
