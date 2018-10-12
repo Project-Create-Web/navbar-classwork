@@ -1,0 +1,83 @@
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-column-gap: 10px;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 50px;
+}
+.josi2 {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-rows: 40px 40px;
+    cursor: pointer;
+}
+.josi1 {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    background-color:lightgrey;
+    /* padding: 20px 20px;" */
+    width:200px;
+    cursor: pointer;
+
+}
+.josi1 a:first-of-type{
+    background-color:green;
+    color:white;
+}
+.josi2a {
+    display: grid;
+    background-color:#444;
+    color: white;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    text-align: center;
+}
+
+.josi2b {
+    display: grid;
+    background-color: lightgray;
+    color: rgb(77, 74, 74);
+    grid-template-columns: 100px 100px 100px auto 100px;
+    text-align: center;
+}
+.josi2a a {
+    padding: 10px 10px;
+}
+.josi2b a {
+    padding:10px 10px;
+}
+.josi1 a {
+    padding:10px 10px;
+}
+.josi2a a:first-of-type {
+    background-color: green;
+}
+.josi2b a:nth-of-type(3) {
+    background-color: dodgerblue;
+}
+.josi1 :hover {
+    background-color: #444;
+    color: white;
+}
+.josi2a :hover {
+    background-color: black;
+    color: white;
+}
+.josi2a a:nth-of-type(4)
+{
+    background-color: #444;
+    cursor:auto;
+}
+.josi2b :hover {
+    background-color: rgb(201, 193, 193);
+    color:  rgb(73, 71, 71);
+}
+.josi2b a:nth-of-type(4)
+ {
+   background-color:  lightgray;
+    cursor: auto;
+}
