@@ -1,0 +1,68 @@
+main{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 50px;
+}
+a{
+    text-decoration: none;
+}
+.jss1 {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    background-color: lightgray;
+}
+.jss2 {
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-rows: 40px 40px;
+}
+.jss2a {
+    display: grid;
+    background-color: #444;
+    color: white;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    text-align: center;
+}
+.jss2b{
+    display: grid;
+    background-color: lightgray;
+    color: black;
+    grid-template-columns: 100px 100px 100px auto 100px;
+    text-align: center;
+}
+.jss2a a{
+    padding: 10px 10px;
+    border-right: 1px solid white;
+}
+.jss2b a{
+    padding: 10px 10px;
+    border-right: 1px solid white;
+}
+.jss1 a{
+    padding: 10px 30px;
+    border-top: 1px solid white;
+}
+.jss1 a:nth-child(1){
+    color: white;
+    background-color: green;
+}
+.jss2a a:nth-child(1){
+    color: white;
+    background-color: green;
+}
+.jss2b a:nth-child(3){
+    color: white;
+    background-color:#008CBA ;
+}
+.jss1 :hover{
+    background-color: #333; 
+    color: white;
+}
+.jss2b :hover{
+    background-color: #333; 
+    color: white;
+}
+.jss2a :hover{
+    background-color: #333; 
+    color: white;
+}
